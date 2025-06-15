@@ -83,6 +83,7 @@ ul {
 .card__title {
 	font-size: 20px;
 	margin-bottom: 20px;
+	transition: color 0.3s ease-in-out;
 }
 .card__title a {
 	display: inline-block;
@@ -96,12 +97,12 @@ ul {
 }
 
 .card:hover {
-	.card__title a{
-		color: rgb(126, 102, 58);
-	}
-	transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 	transform: scale(1.05);
 	cursor: pointer;
+}
+
+.card:hover .card__title a {
+  color: rgb(126, 102, 58);
 }
 
 @media(min-width: 480px) {
